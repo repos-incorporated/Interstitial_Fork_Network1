@@ -30,8 +30,9 @@ jobs:
         run: echo Hello, world
   deployment:
     runs-on: ubuntu-latest
+    environment: preprod
     steps:
-      - name: preprod
+      - name: deploy
         run: echo preprod is deployed
     
   
